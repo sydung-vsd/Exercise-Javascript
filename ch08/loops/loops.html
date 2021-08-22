@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Prime Numbers</title>
+    <script src="js/main.js"></script>
+
+    <style>
+        body {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 100%;
+            background-color: white;
+            width: 730px;
+            margin: 0 auto;
+            border: 3px solid blue;
+            padding: 0 2rem 1rem;
+            box-shadow: 3px 3px 3px #01019e;
+        }
+        h1 {
+            font-size: 150%;
+            color: blue;
+            margin-bottom: 1rem;
+        }
+        label {
+            float: left;
+            width: 14rem;
+            text-align: right;
+        }
+        input,textarea {
+            width: 15rem;
+            margin-left: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        input[type="button"] {
+            margin-left: 15rem;
+            width: 150px;
+        }
+        span {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Find Prime Numbers</h1>
+    <p>Enter any a number to find out how many prime numbers there are up to end including that value.</p>
+    <form id="prime_number">
+        <label for="number">Enter Number:</label>
+        <input type="text" id="number" name="number">
+        <span>*</span><br/><br/>
+        <label for="count">Prime Count:</label>
+        <input type="text" id="count" name="count" disabled><br/><br/>
+        <label for="prime_number">Prime Numbers:</label>
+        <textarea name="prime_number" id="prnumber" cols="30" rows="5" disabled></textarea>
+        <label for="&nbsp;"></label>
+        <input type="button" id="calculate" name="calculate" value="calculate">
+
+    </form>
+</body>
+</html>

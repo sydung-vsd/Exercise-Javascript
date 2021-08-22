@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <script src="js/task_list.js"></script>
+
+    <style>
+        body {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 100%;
+            background-color: white;
+            width: 730px;
+            margin: 0 auto;
+            border: 3px solid blue;
+            padding: 0 2rem 1rem;
+            box-shadow: 3px 3px 3px #01019e;
+        }
+        input{
+            box-sizing: border-box;
+            width: 100%;
+        }
+        input[type="button"]{
+            cursor: pointer;
+        }
+        #task_left{
+            float: left;
+            width: 50%;
+            margin-right: 2em;
+        }
+        .btn_left{
+            float: left;
+            width: 45%;
+            margin-right: 2em;
+        }
+        .btn_right{
+            float: right;
+            width: 45%;
+        }
+        #task_right::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task Manager</h1>
+        <form id="task_left">
+            <label for="task">Task</label><br/>
+            <input type="text" id="task" name="task"><br/><br/>
+            <div class="btn">
+                <div class="btn_left">
+                    <input type="button" id="add_task" name="add_task" value="Add Task"><br/><br/>
+                    <input type="button" id="delete_task" name="delete_task" value="Delete Task"><br/><br/>
+                    <input type="button" id="set_name" name="set_name" value="Set Name">
+                </div>
+    
+                <div class="btn_right">
+                    <input type="button" id="clear_task" name="clear_task" value="Clear Task"><br/><br/>
+                    <input type="button" id="toggle_sort" name="toggle_sort" value="Toggle Sort"><br/><br/>
+                    <input type="button" id="filter_task" name="filter_task" value="Filter Task">
+                </div>
+            </div>
+        </form>
+    
+    <div id="task_right">
+        <label for="mary_task">Mary's Tasks</label><br/>
+        <textarea name="mary_task" id="mary_task" cols="42" rows="10"></textarea>
+    </div>
+    
+</body>
+</html>
